@@ -1,0 +1,259 @@
+.explain-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.explain-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.explain-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #e8e8f0;
+    border-top-color: #6C63FF;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 16px;
+}
+
+.explain-loading p {
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Header */
+.explain-header {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.explain-icon {
+    font-size: 36px !important;
+    color: #6C63FF;
+    margin-top: 2px;
+}
+
+.explain-header h2 {
+    font-size: 1.6rem;
+    color: #1a1a2e;
+    margin: 0 0 4px;
+}
+
+.explain-header p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Empty State */
+.explain-empty {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 16px;
+}
+
+.explain-empty-icon {
+    font-size: 64px !important;
+    color: #ddd;
+    margin-bottom: 16px;
+}
+
+.explain-empty h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.explain-empty p {
+    color: #888;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* List */
+.explain-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.explain-card {
+    background: white;
+    border: 1px solid #e8e8f0;
+    border-radius: 14px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.explain-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.explain-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.explain-product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.explain-product h4 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+.explain-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #6C63FF;
+}
+
+.explain-match-score {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #FF9800;
+    background: rgba(255, 152, 0, 0.08);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.explain-match-score svg {
+    font-size: 14px !important;
+}
+
+/* Explanation */
+.explain-reason {
+    display: flex;
+    gap: 10px;
+    padding: 12px 14px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    border-left: 3px solid #2196F3;
+}
+
+.explain-reason-icon {
+    color: #2196F3;
+    font-size: 20px !important;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.explain-reason p {
+    font-size: 0.85rem;
+    color: #444;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Alternatives */
+.explain-alternatives {
+    margin-bottom: 14px;
+}
+
+.explain-alternatives h5 {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.explain-alt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.explain-alt-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.explain-alt-name {
+    flex: 1;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+.explain-alt-price {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.explain-alt-type {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: capitalize;
+}
+
+.explain-alt-type svg {
+    font-size: 12px !important;
+}
+
+.explain-alt-type.budget {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.explain-alt-type.premium {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+/* Add Button */
+.explain-add-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #6C63FF, #5A52E0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.explain-add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .explain-container { padding: 20px 15px; }
+    .explain-card-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .explain-alt-item { flex-wrap: wrap; }
+}

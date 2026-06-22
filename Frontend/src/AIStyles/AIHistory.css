@@ -1,0 +1,196 @@
+.ai-history-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.ai-history-header {
+    margin-bottom: 30px;
+}
+
+.ai-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color: #555;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+}
+
+.ai-back-btn:hover {
+    border-color: #6C63FF;
+    color: #6C63FF;
+}
+
+.ai-history-header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+}
+
+.ai-history-loading {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+/* Empty State */
+.ai-history-empty {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.ai-empty-icon {
+    font-size: 64px !important;
+    color: #ddd;
+    margin-bottom: 16px;
+}
+
+.ai-history-empty p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.ai-history-empty button {
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #6C63FF, #5A52E0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.ai-history-empty button:hover {
+    transform: translateY(-2px);
+}
+
+/* History List */
+.ai-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ai-history-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e8e8f0;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.ai-history-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.ai-history-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ai-history-card-header h3 {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.ai-status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ai-status-generated { background: #e3f2fd; color: #1976D2; }
+.ai-status-saved { background: #e8f5e9; color: #388E3C; }
+.ai-status-added_to_cart { background: #fff3e0; color: #F57C00; }
+.ai-status-ordered { background: #fce4ec; color: #C2185B; }
+
+.ai-history-card-body {
+    padding: 16px 20px;
+}
+
+.ai-history-card-body p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 12px;
+    line-height: 1.4;
+}
+
+.ai-history-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.ai-history-meta span {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 500;
+}
+
+.ai-history-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.ai-history-card-actions {
+    padding: 12px 20px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    gap: 10px;
+}
+
+.ai-delete-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border: 1px solid #ffcdd2;
+    border-radius: 6px;
+    background: white;
+    color: #e53935;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.ai-delete-btn:hover {
+    background: #ffebee;
+}
+
+@media (max-width: 768px) {
+    .ai-history-container {
+        padding: 20px 15px;
+    }
+
+    .ai-history-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .ai-history-meta {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

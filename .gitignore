@@ -1,0 +1,13 @@
+node_modules/
+*/node_modules/
+
+.env
+.env.local
+Backend/config/config.env
+
+dist/
+build/
+Frontend/dist/
+
+.DS_Store
+.vscode/
